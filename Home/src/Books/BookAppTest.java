@@ -12,31 +12,26 @@ class BookAppTest {
 		List<Book> books = new ArrayList<Book>();
 		try (Scanner newLineScann = new Scanner(new File("d:/labs/ItAcademy/files/books.txt"))) {
 			while (newLineScann.hasNextLine()) {
-				// line.add(newLineScann.nextLine());
-				// System.out.println(line);
 				books.add(createBook(newLineScann.nextLine()));
 			}
 		}
-		// newLineScann.close();
-		// System.out.println(line.get(1));
+
 		Menu result = new Menu();
-		System.out.println(result.Choice());
+		String resCh = result.Choice();
+		System.out.println("Книги соответствующие вашему выбору: ");
 
-	}
-
-	public String selectFromListAuthor(String firstChoice) {
-		for (Book sortedElement : book.getAuthor()) {
-
+		for (Book book : books) {
+			if (resCh.equals(book.getAuthor())) {
+				System.out.println(book);
+			}
+			if (resCh.equals(book.getPubHouse())) {
+				System.out.println(book);
+			}
+			/*if (Menu.yearMenu < book.getPubYear()) {
+				System.out.println(book);
+			}*/
 		}
-		return firstChoice;
-	}
 
-	public String selectFromListPubHouse(String firstChoice) {
-		return firstChoice;
-	}
-
-	public Integer selectFromListYear(Integer firstChoice) {
-		return firstChoice;
 	}
 
 	private static Book createBook(String nextLine) {
@@ -52,7 +47,7 @@ class BookAppTest {
 			book.setPrice(Integer.valueOf(fieldsArr[6]));
 			book.setBinding(fieldsArr[7]);
 		}
-		System.out.println(book);
+		//System.out.println(book);
 		return book;
 
 	}
