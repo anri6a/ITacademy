@@ -24,13 +24,17 @@ class BookAppTest {
 			if (resCh.equals(book.getAuthor())) {
 				System.out.println(book);
 			}
+		}
+		for (Book book : books) {
 			if (resCh.equals(book.getPubHouse())) {
 				System.out.println(book);
 			}
-			/*if (Menu.yearMenu < book.getPubYear()) {
-				System.out.println(book);
-			}*/
 		}
+		/*for (Book book : books) {
+			if (Menu.yearMenu < book.getPubYear()) {
+				System.out.println(book);
+			}
+		}*/
 
 	}
 
@@ -47,7 +51,7 @@ class BookAppTest {
 			book.setPrice(Integer.valueOf(fieldsArr[6]));
 			book.setBinding(fieldsArr[7]);
 		}
-		//System.out.println(book);
+		// System.out.println(book);
 		return book;
 
 	}

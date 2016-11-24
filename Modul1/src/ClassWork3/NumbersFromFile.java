@@ -32,9 +32,9 @@ public class NumbersFromFile implements Serializable {
 			}
 			
 		
-		} catch (IOException e) {
+		} /*catch (IOException e) {
 			System.out.println("IOException");
 		}
-	
+	*/
 			}
 }

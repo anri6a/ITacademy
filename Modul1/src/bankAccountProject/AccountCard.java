@@ -1,5 +1,5 @@
 package bankAccountProject;
 
-public class AccountCard {
+public class AccountCard extends AccountIndividual {
 
 }

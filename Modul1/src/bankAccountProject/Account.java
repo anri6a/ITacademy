@@ -1,5 +1,5 @@
 package bankAccountProject;
 
-public abstract class Account {
+public abstract class Account implements AccountBlockable {
 
 }

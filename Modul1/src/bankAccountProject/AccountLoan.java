@@ -1,5 +1,5 @@
 package bankAccountProject;
 
-public class AccountLoan {
+public class AccountLoan extends AccountIndividual {
 
 }

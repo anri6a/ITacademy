@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class Menu {
 	public static Scanner yourChoice;
-	//static int yearMenu;
+	static int yearMenu;
 	public String Choice() {
 		yourChoice = new Scanner(System.in);
 		System.out.println("Нажмите 1,\nесли хотите вывести список книг одного автора\n\n"
@@ -27,7 +27,7 @@ class Menu {
 		case "3":
 			System.out.println("После какого года книги вас интересуют?");
 			String secondChoiceYear = yourChoice.nextLine();
-			//yearMenu = Integer.parseInt(secondChoiceYear);
+			yearMenu = Integer.parseInt(secondChoiceYear);
 			break;
 		default:
 			System.out.println("вы выбрали неправильно");

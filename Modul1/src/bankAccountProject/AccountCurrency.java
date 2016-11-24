@@ -1,5 +1,5 @@
 package bankAccountProject;
 
-public class AccountCurrency {
+public class AccountCurrency extends AccountEntity {
 
 }

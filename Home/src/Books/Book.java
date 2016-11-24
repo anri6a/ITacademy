@@ -77,7 +77,8 @@ public class Book {
 	@Override
 	public String toString() {
 
-		return "[" + author + " - " + name + ", " + pubYear +", "+binding+" переплет"+", "+pubHouse+"]";
+		return "[" + author + " - " + name + ", " + pubYear + ", " + binding + " переплет" + ", " + pubHouse + "]";
 	}
 
 }
+

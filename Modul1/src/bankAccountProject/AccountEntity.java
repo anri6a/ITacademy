@@ -1,5 +1,5 @@
 package bankAccountProject;
 
-public abstract class AccountEntity {
+public abstract class AccountEntity extends Account {
 
 }
