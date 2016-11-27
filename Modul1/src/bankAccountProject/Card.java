@@ -1,6 +1,6 @@
 package bankAccountProject;
 
-public class AccountCard extends AccountIndividual {
+public class Card extends Individual {
 	public enum CardType {
 		GOLD, SILVER, REGULAR
 	}
@@ -17,7 +17,7 @@ public class AccountCard extends AccountIndividual {
 	}
 
 	double payCard() {
-		accountBalance = accountBalance * cardType;
+		//accountBalance = accountBalance * cardType;
 
 		return accountBalance;
 	}

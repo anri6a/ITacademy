@@ -1,6 +1,6 @@
 package bankAccountProject;
 
-public class AccountChecking extends AccountEntity {
+public class Checking extends Entity {
 	private Double pensionFundPercent;
 
 	Double cashLessPaymends() {

@@ -1,6 +1,6 @@
 package bankAccountProject;
 
-public class AccountLoan extends AccountIndividual {
+public class Loan extends Individual {
 private double anualInterest;
 private int remainingPeriod;
 

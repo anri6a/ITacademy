@@ -1,6 +1,6 @@
 package bankAccountProject;
 
-public interface AccountBlockable {
+public interface Blockable {
 	void block();
 
 	void unBlock();

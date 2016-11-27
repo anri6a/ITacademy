@@ -1,6 +1,6 @@
 package bankAccountProject;
 
-public class AccountCurrency extends AccountEntity {
+public class Currency extends Entity {
 	private double exchangeRate;
 	private double currency;
 

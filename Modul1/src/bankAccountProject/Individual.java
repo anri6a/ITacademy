@@ -1,6 +1,6 @@
 package bankAccountProject;
 
-public abstract class AccountIndividual extends Account {
+public abstract class Individual extends Account {
 	private String nameIndividual;
 	private String passNumber;
 	

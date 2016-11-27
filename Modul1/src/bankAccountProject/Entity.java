@@ -1,6 +1,6 @@
 package bankAccountProject;
 
-public abstract class AccountEntity extends Account {
+public abstract class Entity extends Account {
 private String nameOrg;
 private String regSertificateNumber;
  
